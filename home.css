@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+}
+
+header{
+    background-image: url(img/bg.png);
+    background-size: cover;
+    background-color: purple;
+    background-repeat: no-repeat;
+    height: 20em;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+main{
+    background-color: purple;
+}
+section.s1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 998px;
+    margin: 0 auto;
+    padding: 5em 0;
+    align-items: center;
+}
+section.s1 div{
+    width: 467px;
+    height: 245px;  
+    background-color: white;
+    margin: 1em;
+    border-radius: 15px;
+}
+section.s2{
+    background-color:#FBE62F;
+    text-align: center;
+    padding: 4em 0;
+}
+section.s2 p a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.53);
+    font-size: 8.5em;
+}
+section.s2 figure{
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    top: 1140px;
+    left: 45%;
+    animation-name: click;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes click{
+    50%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+section.s3{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5em 0;
+    width: 70em;
+    margin: 0 auto;
+}
+section.s3 div{
+    margin: 2em 2em;
+}
+div#esmaecer{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+    visibility: hidden;
+}
+nav#busca{
+    position: absolute;
+    background-color: yellow;
+    height: 22em;
+    width: 10em;
+    font-size: 1.2em;
+    box-sizing: border-box;
+    left: 60%;
+    visibility: hidden;
+}
+nav#busca ol{
+    list-style-type: none;
+    text-align: right;
+}
+nav#busca ol li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.53);
+}
+nav#busca ol li a:hover{
+    color: black;
+}
+nav#busca ol li{
+    font-size: 1.5em;
+    margin: 1em 1.5em 1em 0;
+}
+div.submenu{
+    visibility: hidden;
+    position: absolute;
+    top: 1.7em;
+    right: 1em
+}
+div.fechar2{
+    visibility: hidden;
+}
+li#x{
+    visibility: hidden;
+    position: absolute;
+    right: 0.5em;
+}
+footer{
+    background-image: url(img/bg.png);
+    background-size: cover;
+    background-color: purple;
+    background-repeat: no-repeat;
+    height: 20em;
+    display: flex;
+    align-items: center;
+}
+footer section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: 0 auto;
+    justify-content: center;
+} 
+footer figure{
+    margin: 0.5em 0.5em;
+}
+header section{
+    display: flex;
+    font-size: 1.2em;
+    margin: 0 4.5em;
+    justify-content: space-between;
+    align-items: center;
+}
+header section nav ol{
+    display: flex;
+    list-style-type: none;
+}
+header section nav ol li{
+    margin: 0 0.5em 0 0.5em;
+}
+header section nav ol li a{
+    color: white;
+    text-decoration: none;
+}
+header section nav ol li a:hover{
+    text-decoration: underline;
+}
+form input{
+    width: 600px;
+    height: 30px;
+    border: none;
+    padding: 1em;
+}
+form div{
+    text-align: center;
+}
+
+form{
+    padding: 2em 0 2em 0;
+    background-color: white;
+    width: 730px;
+    height: 0.5em;
+    margin: 3em auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 9px;
+}
+button, form figure{
+    border: none;
+    margin: 0 1em;
+}
+button{
+    border: none;
+    margin: 0 1em;
+}
+
+@media screen and (max-width:500px){
+    h1 img{
+        width: 200px;
+        padding-top: 1em;
+    }
+    nav#nav{
+        visibility: hidden;
+        position: absolute;
+        /* background-color: rgb(65, 62, 62); */
+        background-color: purple;
+        top: 5em;
+        right: 0;
+        width: 100%;
+        height: 25em;
+        text-align: right;
+    }
+    nav#nav ol{
+        display: inline;
+    }
+    nav#nav ol li{
+        margin: 1em;
+        font-size: 1.6em;
+    }
+    header section{
+        margin: 0 1em;
+    }
+    div.submenu{
+        visibility: visible;
+    }
+    form{
+        width: 22em;
+    }
+    form input{
+        width: 18em;
+    }
+    nav#busca{
+        left: 45%;
+    }
+    header, footer{
+        height: 15em;
+    }
+    section.s1{
+        width: 22em;
+    }
+    section.s2 p a{
+        font-size: 3em;
+    }
+    section.s2{
+        padding: 5em 0;
+    }
+    section.s2 figure{
+        top: 1600px;
+        left: 30%;
+    }
+    section.s2 figure img{
+        width: 100px;
+    }
+   section.s3{
+        width: 22em;
+    }
+    figure.logoif img{
+        width: 160px;
+    }
+    figure.direx img{
+        width: 135px;
+    }
+    figure.ifrn img{
+        width: 125px;
+    }
+    footer section{
+        width: 300px;
+    }
+}

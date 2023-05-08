@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css" />
+    <script>
+        function abrir(){
+            document.getElementById("busca").style.visibility = 'visible';
+            document.getElementById("esmaecer").style.visibility = 'visible';
+}
+        function fechar(){
+            document.getElementById("busca").style.visibility = 'hidden';
+            document.getElementById("esmaecer").style.visibility = 'hidden';
+}
+        function abrir2(){
+            document.getElementById("nav").style.visibility = 'visible';
+            document.getElementById("x").style.visibility = 'visible';
+            document.getElementById("esmaecer").style.visibility = 'visible';
+}
+        function fechar2(){
+            document.getElementById("nav").style.visibility = 'hidden';
+            document.getElementById("x").style.visibility = 'hidden';
+        document.getElementById("esmaecer").style.visibility = 'hidden';
+}
+    </script>
+</head>
+<body>
+    <div id="esmaecer"></div>
+    <header>
+        <section>
+            <h1><a href="index.html"><img src="img/logo.png"/></a></h1>
+            <nav id="nav">
+                <ol>
+                    <li><a href="L.html">Notícias</a></li>
+                    <li><a href="U.html">Programação</a></li>
+                    <li><a href="I.html">Palestrantes</a></li>
+                    <li><a href="Z.html">Agenda Cultural</a></li>
+                    <li><a href="A.html">Contato</a></li>
+                    <li id="[X]"><a href="javascript:fechar2()">(X)</a></li>
+                </ol>
+            </nav>
+        </section>
+        <form>
+            <button id="search">
+                <img src="img/lupa.png"/>
+            </button>
+            <div>
+                <input type="text" id="pesquisa" />
+            </div>
+            <a href="javascript:abrir()">
+                <figure id="seta">
+                    <img src="img/seta.png"/>
+                </figure>
+            </a>
+        </form>
+        <nav id="busca">
+            <ol>
+                <li><a href="">Diatinf</a></li>
+                <li><a href="">Diac</a></li>
+                <li><a href="">Diacin</a></li>
+                <li><a href="">Diacon</a></li>
+                <li><a href="">Diaren</a></li>
+                <li><a href="javascript:fechar()">[X]</a></li>
+            </ol>
+        </nav>
+        <div class="submenu">
+            <a href="javascript:abrir2()">
+                <figure id="img-menu">
+                    <img src="img/submenu.png" width="40em"/>
+                </figure>
+            </a>
+        </div>
+        <div class="fechar2">
+            <a href="javascript:fechar2()">[Fechar]</a>
+        </div>
+    </header>
+    <main>
+        <section class="s1">
+            <div>
+            <!-- <figure>
+                <img src="img/expo1.jpg"/>
+            </figure>
+            --></div>
+            <div>
+                <!-- <figure>
+                    <img src="img/expo2.jpg"/>
+                </figure>
+                -->
+            </div>
+            <div>
+                <!-- <figure>
+                    <img src="img/expo3.jpg"/>
+                </figure>
+                -->
+            </div>
+            <div>
+                <!-- <figure>
+                    <img src="img/expo4.jpg"/>
+                </figure>
+                -->
+            </div>
+        </section>
+        <section class="s2">
+            <p><a href="">Agenda Cultural</a></p>
+            <figure>
+                <img src="img/click.png"/>
+            </figure>
+        </section>
+        <section class="s3">
+            <div>
+                <figure>
+                    <img src="img/p1.png"/>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="img/p2.png"/>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="img/p3.png"/>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="img/p1.png"/>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="img/p5.png"/>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="img/p6.png"/>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <figure class="logoif">
+                <img src="img/logo.png" width="220px"/>
+            </figure>
+            <figure class="direx">
+                <img src="img/direx.png" width="185px"/>
+            </figure>
+            <figure class="ifrn">
+                <img src="img/logoif.png" width="175px"/>
+            </figure>
+        </section>
+    </footer>
+</body>
+</html>
